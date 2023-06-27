@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas y Musica</title>
+    <link rel="icon" href=" {% static 'Logo Principal.jpg' %} " type="image.jpg">
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- FUENTE INDIE FLOWER-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@200;300;400&family=Sono:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- FUENTE LOBSTER-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald:wght@200;300;400&family=Sono:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+
+    </div>
+
+    <div class="container">
+        <nav class="nav-main">
+        {% block nav-main %}
+        <img src="{% static 'Logo_NAV.png' %}" alt="LOGO" class="nav-brand">
+        <ul class="nav-menu">
+            <li>
+            <a href="{% url 'poemas_app:poemas' %}">Amor</a>
+            </li>
+            <li>
+                <a href="{% url 'poemos_app:poemos' %}">Motivación</a>
+            </li>
+            <li>
+                <a href="{% url 'canciones_app:songs' %}">Música</a>
+            </li>
+            <li>
+                <a href="javascript:history.back()">Regresar</a>
+            </li>
+            </ul>
+        </nav>
+        <hr>
+        {% endblock %}
+        
+        {% block poemo_cuerpo %}
+        {% endblock  %}
+
+
+    <section class="social">
+        <p>Siguenos y Escríbenos</p>
+        <div class="links">
+            <a href="https://www.facebook.com/profile.php?id=100090331242485&mibextid=ZbWKwL" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/message/AS4PMCB7LKJHE1" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>              
+        </div>
+    </section>
+
+<div class="footer-links">   
+    <div class="footer-container">
+        <ul>
+            <li>
+                <a href="#">
+                    <h3>Escritora</h3> 
+                </a>                 
+            </li>
+            <li>
+                <a href="#"></a>
+                <h3>Jennifer Bedoya Ladino</h3>
+            </li>
+        </ul>
+        
+        <ul>
+            <li>
+                <a href="#">
+                <h3>Escritora</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <h3>Ana Maria Betancourth</h3>
+            </li>
+        </ul>  
+        
+        <ul>
+            <li>
+                <a href="#">
+                    <h3>Desarrollador</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#"></a>
+                <h3>David Agudelo Sanchez</h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <footer class="footer">
+        Copyright &copy;<script>document.write(new  Date().getFullYear());</script> Todos los derechos reservados</a>  
+    </footer>
+    <script src="{% static 'java.js' %}"></script>
+    <!-- SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'esqueleto_music.html' %}
+
+{% load static %}
+
+{% block songs %}
+{% for music in music_list %}
+            <div class="tarjeta">
+                <img src="{{ music.img }}" alt="{{music.nombre}}" width="100%" height="180px 180px">
+                <h3>{{music.nombre}}</h3>
+                <p>{{music.letra|safe}}</p>
+                <a href="{{music.url}}" target="_blank" class="btn">Escuchar</a>    
+            </div>
+{% endfor %}
+{% endblock  %}

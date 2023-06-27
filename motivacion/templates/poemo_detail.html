@@ -1,0 +1,10 @@
+{% extends 'poemo_esqueleto.html' %}
+        {% block poemo_cuerpo %}       
+        <section class="poema">
+            <h2>{{poemo.titulo}}</h2>
+            <h4>Fecha De Pulicación {{poemo.fecha|date:'F j Y'}}</h4>
+            <h3>{{poemo.descripcion}}</h3> 
+            <p>{{poemo.poema_text|safe}}</p>
+            <h4>{{poemo.escritor}}</h4>
+        </section>
+        {% endblock  %}
