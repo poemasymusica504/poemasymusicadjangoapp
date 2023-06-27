@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ),
                 ("nombre", models.CharField(max_length=50)),
                 ("letra", models.CharField(max_length=500)),
-                ("img", models.CharField(max_length=1000000000000)),
+                ("img", models.CharField(max_length=999)),
                 ("url", models.URLField(blank=True)),
                 ("fecha", models.DateField(auto_now_add=True, null=True)),
             ],
