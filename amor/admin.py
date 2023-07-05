@@ -4,6 +4,6 @@ from .models import Poema
 
 @admin.register(Poema)
 
-class ValorAdmin(admin.ModelAdmin):
+class PoemaAdmin(admin.ModelAdmin):
     list_display = ('id','escritor','titulo','fecha')
     search_fields = ('id','escritor','titulo')
