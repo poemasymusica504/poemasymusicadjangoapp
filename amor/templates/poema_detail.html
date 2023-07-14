@@ -4,7 +4,7 @@
             <h2>{{poema.titulo}}</h2>
             <h4>Fecha De Pulicación {{poema.fecha|date:'F j Y'}}</h4>
             <h3>{{poema.descripcion}}</h3> 
-            <p>{{poema.poema_text|safe}}</p>
+            <pre>{{poema.poema_text}}</pre>
             <h4>{{poema.escritor}}</h4>
         </section>
         {% endblock  %}

@@ -147,6 +147,13 @@ hr {
     font-size: 125%;
     display: flow-root;
 }
+.poema pre {
+    width: auto;
+    padding: 4px 1px 2px 330px;
+    text-align: start;
+    font-size: 125%;
+    display: flow-root;
+}
 .poema h4 {
     text-align: center;
     font-family: 'Lobster';
