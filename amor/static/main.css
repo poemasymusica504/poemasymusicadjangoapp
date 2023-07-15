@@ -153,6 +153,7 @@ hr {
     text-align: start;
     font-size: 125%;
     display: flow-root;
+    margin: 15px;
 }
 .poema h4 {
     text-align: center;
