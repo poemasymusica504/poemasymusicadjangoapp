@@ -7,3 +7,5 @@ from .models import Poemo
 class PoemoAdmin(admin.ModelAdmin):
     list_display = ('id','escritor','titulo','fecha')
     search_fields = ('id','escritor','titulo')
+
+    list_display_links = ('escritor')

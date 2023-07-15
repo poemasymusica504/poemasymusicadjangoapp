@@ -7,3 +7,5 @@ from .models import Music
 class MusicAdmin(admin.ModelAdmin):
     list_display = ('id','nombre','url','fecha')
     search_fields = ('id','nombre')
+
+    list_display_links = ('nombre')

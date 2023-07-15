@@ -7,3 +7,7 @@ from .models import Poema
 class PoemaAdmin(admin.ModelAdmin):
     list_display = ('id','escritor','titulo','fecha')
     search_fields = ('id','escritor','titulo')
+
+    list_display_links = ('escritor')
+
+    
